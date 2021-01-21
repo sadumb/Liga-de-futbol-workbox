@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Header content */
+.sideline {
+  overflow: hidden;
+  text-align: center;
+}
+
+.sideline:before,
+.sideline:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.sideline:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.sideline:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+/* Nav content */
+nav {
+  background-color: #0c1b6a !important;
+
+  #nav-logo {
+    height: 56px;
+  }
+
+  @media only screen and (min-width: 601px) {
+    height: 65px;
+  }
+}
+
+/* Body content */
+.card {
+  .card-image {
+    padding-top: 10px;
+  }
+  .card-content {
+    padding: 15px 20px;
+  }
+  .card-title {
+    font-weight: 500;
+  }
+}
+
+.standing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 480px;
+
+  .logo {
+    padding: 10px 0;
+  }
+
+  .standing-info {
+    .standing-info-line {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 5px;
+      font-size: 18px;
+      font-weight: 450;
+    }
+  }
+}
+
+.match-card {
+  border-radius: 15px;
+
+  .team-name {
+    font-size: 1.5rem;
+  }
+
+  .versus {
+    font-size: 1.3rem;
+    color: orange;
+  }
+
+  .add_match,
+  .delete_match {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.match-footer {
+  padding: 5px 0 !important;
+  background-color: #caf0f8;
+  border-radius: 0 0 15px 15px !important;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hidden {
+  display: none;
+}

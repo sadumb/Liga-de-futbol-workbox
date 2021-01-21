@@ -1,0 +1,194 @@
+header {
+  padding: 100px 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #0c1b6a;
+  background-image: url("/src/assets/img/stadium.jpg");
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#00204f7e, #001524);
+}
+
+header .hero {
+  position: relative;
+  z-index: 9;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+header .hero img {
+  width: 300px;
+  margin-bottom: 24px;
+}
+
+header .hero h1 {
+  margin: 0;
+  letter-spacing: 5px;
+  word-spacing: 7px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+header .hero p {
+  font-weight: 300;
+  letter-spacing: 4px;
+  word-spacing: 2px;
+  font-size: 24px;
+}
+
+.banner-league {
+  background-color: #bde0ff;
+  text-align: center;
+  padding: 100px 0 18px;
+}
+
+#attribution {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Header content */
+.sideline {
+  overflow: hidden;
+  text-align: center;
+}
+
+.sideline:before,
+.sideline:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.sideline:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.sideline:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+/* Nav content */
+nav {
+  background-color: #0c1b6a !important;
+}
+
+nav #nav-logo {
+  height: 56px;
+}
+
+@media only screen and (min-width: 601px) {
+  nav {
+    height: 65px;
+  }
+}
+
+/* Body content */
+.card .card-image {
+  padding-top: 10px;
+}
+
+.card .card-content {
+  padding: 15px 20px;
+}
+
+.card .card-title {
+  font-weight: 500;
+}
+
+.standing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 480px;
+}
+
+.standing .logo {
+  padding: 10px 0;
+}
+
+.standing .standing-info .standing-info-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5px;
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.match-card {
+  border-radius: 15px;
+}
+
+.match-card .team-name {
+  font-size: 1.5rem;
+}
+
+.match-card .versus {
+  font-size: 1.3rem;
+  color: orange;
+}
+
+.match-card .add_match,
+.match-card .delete_match {
+  position: absolute;
+  right: 0;
+}
+
+.match-footer {
+  padding: 5px 0 !important;
+  background-color: #caf0f8;
+  border-radius: 0 0 15px 15px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

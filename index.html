@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Liga de Futbol</title>
+    <meta name="description" content="Liga de Futbol" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/css/materialize.min.css" />
+    <link
+      rel="stylesheet preconnect"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/scss/style.css" />
+    <link rel="stylesheet preconnect" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/src/assets/icons/icon192.png" />
+    <link rel="shortcut icon" type="image/jpg" href="/src/assets/logo/favicon.ico" />
+    <meta name="theme-color" content="#0c1b6a" />
+  </head>
+
+  <body>
+    <!-- Navigasi -->
+    <nav role="navigation">
+      <div class="nav-wrapper container">
+        <a href="#home" class="brand-logo" id="logo-container">
+          <img href="#home" src="src/assets/logo/logo.png" id="nav-logo" alt="Football Logo" />
+        </a>
+        <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+        <ul class="topnav right hide-on-med-and-down"></ul>
+        <ul class="sidenav" id="nav-mobile"></ul>
+      </div>
+    </nav>
+
+    <!-- Akhir Navigasi -->
+    <div id="preloader">
+      <div class="home-content"></div>
+      <div class="body-content container"></div>
+    </div>
+
+    <script src="src/script/materialize.min.js"></script>
+    <script src="src/script/idb.js"></script>
+    <script src="src/script/main.js" type="module"></script>
+  </body>
+</html>
